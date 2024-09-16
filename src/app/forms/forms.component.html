@@ -1,0 +1,56 @@
+<p>forms works!</p>
+<div class="Container">
+<form (ngSubmit)="OnSubmit()">
+ 
+    <div class="form-group">
+      <label for="">ProductId</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        [(ngModel)]="product.productId"
+        name="productId">
+    </div>
+ 
+    <div class="form-group">
+      <label for="">ProductName</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        [(ngModel)]="product.productName"
+        name="productName">
+    </div>
+ 
+    <div class="form-group">
+      <label for="">ProductPrice</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        [(ngModel)]="product.productPrice"
+        name="productPrice">
+    </div>
+ 
+    <div class="form-group">
+      <label for="">ProductDescription</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        [(ngModel)]="product.productDescription"
+        name="productDescription">
+    </div>
+    <div class="form-group">
+      <label for="">qty</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        [(ngModel)]="product.qty"
+        name="qty">
+    </div>
+    <button type="submit">submit</button>
+  </form>
+
+</div>
